@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Resume</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <!-- Map CSS -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+  <!-- Own Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- Content -->
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="" class="navbar-brand">Rory Corcoran</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="navbar-item pe-4">
+            <a href="#about" class="nav-link"><i class="bi bi-person pe-2"></i>About Me</a>
+          </li>
+          <!-- The Education Bootstrap icon wouldn't work for me so I had to take the full HTML svg tag  -->
+          <li class="navbar-item pe-4">
+            <a href="#education" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16"
+                fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
+              </svg></i>Education</a>
+          </li>
+          <li class="navbar-item pe-4">
+            <a href="#work" class="nav-link"><i class="bi bi-briefcase pe-2"></i>Work Experience</a>
+          </li>
+          <li class="navbar-item pe-4">
+            <a href="#projects" class="nav-link"><i class="bi bi-kanban pe-2"></i>Projects</a>
+          </li>
+          <li class="navbar-item pe-4">
+            <a href="#interests" class="nav-link"><i class="bi bi-binoculars pe-2"></i>Interests</a>
+          </li>
+          <li class="navbar-item pe-4">
+            <a href="#contact" class="nav-link"><i class="bi bi-telephone pe-2"></i>Contact Me</a>
+          </li>
+          <li class="navbar-item ">
+            <a href="bootstrap.html" target="_blank" class="nav-link"><i class="bi bi-bootstrap pe-2"></i>Bootstrap
+              Elements</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Page / Splash Screen  -->
+  <div id="landing">
+    <div class="landing-text text-start ps-5">
+
+      <h3 class="fw-bold">Rory Corcoran</h3>
+      <p class="lead mb-4">
+        Keen for new experiences and challenges. <br>
+        Passionate about the outdoors and technology.
+      </p>
+      <a href="CV/RoryCorcoran.pdf" download class="btn btn-outline-light px-5">CV</a>
+      <!-- Modal Button -->
+      <button class="btn btn-outline-light btn-md px-4 m-4" data-bs-toggle="modal" data-bs-target="#message">Email
+        Me</button>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- About me -->
+  <section id="about" class="p-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6 p-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <img src="images/selfie.jpg" class="img-fluid" alt="portrait photograph" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-5 text-justify">
+          <div class="card bg-white text-dark pb-1 border-0">
+            <div class="card-body">
+              <!-- <div class="h1 mb-2">Me</div> -->
+              <h3 class="card-title mb-2">About me</h3>
+              <p class="card-text">
+                I am currently a 4th Year Computer Science student seeking Graduate
+                Programme opportunities. I completed a 3rd Year internship with
+                Ocuco Ltd. as a Professional Services intern.
+                <br />
+                <br />
+
+
+                My background was in outdoor education and activity
+                instruction here in Ireland. I’ve been
+                able to develop my strengths in the areas of leadership,
+                communications and interpersonal skills as well as gain the following technical skills:
+              <ul>
+                <li>Python & Bash Scripting</li>
+                <li>Web Development</li>
+                <li>Analyse data using Excel, Python & Jupyter Notebooks </li>
+                <li>Design and create database schemas.</li>
+                <li>Design and implement a private cloud</li>
+                <li>Configure networks using the Cisco IOS command set. </li>
+                <li>Troubleshoot networks </li>
+                <li>Write Unit Tests using Selenium for automation </li>
+              </ul>
+              </p>
+
+              <a href="https://www.linkedin.com/in/rory-corcoran/" target="_blank"><i
+                  class="bi bi-linkedin text-dark mx-1" style="font-size: 30px"></i></a>
+              <a href="https://github.com/Rory-Corcoran/" target="_blank"><i class="bi bi-github text-dark mx-1"
+                  style="font-size: 30px"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-twitter text-dark mx-1" style="font-size: 30px"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-facebook text-dark mx-1" style="font-size: 30px"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eductation -->
+  <section id="education" class="mt-5 p-5">
+    <div class="container my-5 pb-5">
+      <div class="row">
+
+        <div class="col-md-12">
+          <h3 class="text-center mb-4">Education</h3>
+          <div class="accordion accordion-flush" id="college">
+
+            <!-- TUD -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed show" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#college-one">
+                  2018&nbsp;- to date &emsp;&emsp; Bsc (Honours) Computing with I.T.
+                  Management&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<a
+                    href="https://www.tudublin.ie/study/part-time/courses/informationtechnologymanagementparttime2-tu069/"
+                    class="ps-5" target="_blank"><img src="images/TUD.jpg" alt=""
+                      style="height: 40px; width: 50px" /></a>
+                </button>
+              </h2>
+              <div id="college-one" class="accordion-collapse collapse show" data-bs-parent="#college">
+                <div class="accordion-body">
+
+                  <!-- Tabs -->
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                      <button class="nav-link active" id="nav-y4-tab" data-bs-toggle="tab" data-bs-target="#nav-y4"
+                        type="button" role="tab" aria-controls="nav-year-4" aria-selected="true">Year 4</button>
+
+                      <button class="nav-link" id="nav-y3-tab" data-bs-toggle="tab" data-bs-target="#nav-y3"
+                        type="button" role="tab" aria-controls="nav-year-3" aria-selected="true">Year 3</button>
+
+                      <button class="nav-link" id="nav-y2-tab" data-bs-toggle="tab" data-bs-target="#nav-y2"
+                        type="button" role="tab" aria-controls="nav-year-2" aria-selected="true">Year 2</button>
+
+                      <button class="nav-link" id="nav-y1-tab" data-bs-toggle="tab" data-bs-target="#nav-y1"
+                        type="button" role="tab" aria-controls="nav-year-1" aria-selected="true">Year 1</button>
+                    </div>
+                  </nav>
+
+                  <!-- Content for tabs -->
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active p-3" id="nav-y4" role="tabpanel" aria-labelledby="nav-y4-tab">
+                      <small class="fw-bold">Current GPA: 3.58</small>
+                      <br><br>
+
+                      <!-- Table Y4 -->
+                      <table class="table table-borderless table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">Semester 1</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Enterprise Perfrormance Architecture</td>
+                          </tr>
+                          <tr>
+                            <td>Security for Cloud & IoT</td>
+                          </tr>
+                          <tr>
+                            <td>Information Management</td>
+                          </tr>
+                          <tr>
+                            <td>Interactive Media Design</td>
+                          </tr>
+                          <tr>
+                            <td>Social Media Analysis</td>
+                          </tr>
+                          <tr>
+                            <td>Project</td>
+                          </tr>
+                          <tr>
+                            <td>Private Cloud Architecture</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <!-- Table Y3 -->
+                    <div class="tab-pane fade p-3" id="nav-y3" role="tabpanel" aria-labelledby="nav-y3-tab">
+                      <table class="table table-borderless table-sm table-fit">
+                        <thead>
+                          <tr>
+                            <th scope="col">Semester 1</th>
+                            <th scope="col">Grade</th>
+                            <th scope="col">Semester 2</th>
+                            <th scope="col">Grade</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Cloud Services & Distributed Computing</td>
+                            <td>A</td>
+
+                            <td>Experiential Learning (Work Experience)</td>
+                            <td>Pass</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Operating Systems</td>
+                            <td>A</td>
+
+                          </tr>
+                          <tr>
+                            <td scope="row">Big Data Technologies</td>
+                            <td>B+</td>
+
+                          </tr>
+                          <tr>
+                            <td scope="row">Innovation & Entrepreneurshp</td>
+                            <td>B+</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Advanced Routing & Switching</td>
+                            <td>B+</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Server-side Web Development</td>
+                            <td>B</td>
+
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <!-- Table Y2 -->
+                    <div class="tab-pane fade p-3" id="nav-y2" role="tabpanel" aria-labelledby="nav-y2-tab">
+                      <table class="table table-borderless table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">Semester 1</th>
+                            <th scope="col">Grade</th>
+                            <th scope="col">Semester 2</th>
+                            <th scope="col">Grade</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Software Quality Assurance & Tesing</td>
+                            <td>A</td>
+                            <td>Information Security</td>
+                            <td>A</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Networking Fundementals</td>
+                            <td>A</td>
+                            <td>Routing & Switching Essentials</td>
+                            <td>A</td>
+
+                          </tr>
+                          <tr>
+                            <td scope="row">Discrete Mathematics 2</td>
+                            <td>A</td>
+                            <td>Management Science</td>
+                            <td>A</td>
+
+                          </tr>
+                          <tr>
+                            <td scope="row">Advanced Database Technologies</td>
+                            <td>B+</td>
+                            <td>Database Admin & Analysis</td>
+                            <td>A</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Client-side Web Development</td>
+                            <td>B+</td>
+                            <td>Project</td>
+                            <td>A</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">IT Services Management</td>
+                            <td>B+</td>
+                            <td>IT Scripting & Automation</td>
+                            <td>B</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <!-- Table Y1 -->
+                    <div class="tab-pane fade p-3" id="nav-y1" role="tabpanel" aria-labelledby="nav-y1-tab">
+                      <table class="table table-borderless table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">Semester 1</th>
+                            <th scope="col">Grade</th>
+                            <th scope="col">Semester 2</th>
+                            <th scope="col">Grade</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Computer Architecture</td>
+                            <td>A</td>
+                            <td>Operating System Fundamentals</td>
+                            <td>A</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Visual Design & User Experience</td>
+                            <td>A</td>
+                            <td>Database Fundamentals</td>
+                            <td>A</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Business & Information Systems</td>
+                            <td>A</td>
+                            <td>Systems Analysis</td>
+                            <td>A</td>
+
+                          </tr>
+                          <tr>
+                            <td scope="row">Discrete Mathematics 1</td>
+                            <td>A</td>
+                            <td>Statistics</td>
+                            <td>A</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Critical Skills Development</td>
+                            <td>A</td>
+                            <td>Social Media Communications
+                            </td>
+                            <td>A</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Software Development 1</td>
+                            <td>B+</td>
+                            <td>Software Development 2</td>
+                            <td>B</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ballyfermot -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#college-two">
+                  2018 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;City & Guilds Diploma in Social Media for
+                  Business&emsp;&emsp;&emsp;&emsp;<a
+                    href="https://www.ballyfermottrainingcentre.ie/diploma-in-social-media-for-business/" class="ps-5"
+                    target="_blank"><img src="images/cdetb.png" alt="college-logo"
+                      style="height: 30px; width: 50px" /></a>
+                </button>
+              </h2>
+              <div id="college-two" class="accordion-collapse collapse" data-bs-parent="#college">
+                <div class="accordion-body">
+                  Creating & Optimising Content for the Web <br> SEO <br> Using Collaborative Technologies <br> Website
+                  Creation <br> Use of Digital Social Media in Marketing Campaigns
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Colaiste Dhulaigh -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#college-three">
+                  2002 - 2007 &emsp;&emsp;&emsp;Higher National Diploma in Outdoor Adventure Management
+                  <a href="https://www.cdcfe.ie/courses/outdoor-adventure-management-shackleton/" target="_blank"
+                    class="ps-5"><img src="images/dhulaigh.png" alt="Colaiste Dhulaigh college-logo"
+                      style="height: 30px; width: 50px" /></a>
+                </button>
+              </h2>
+              <div id="college-three" class="accordion-collapse collapse" data-bs-parent="#college">
+                <div class="accordion-body">
+                  <table class="table table-borderless table-sm">
+
+                    <tbody>
+                      <tr>
+                        <td scope="row">Outdoor Leadership & Instruction</td>
+
+                        <td>Environmental Issues</td>
+
+                      </tr>
+                      <tr>
+                        <td scope="row">Adventure Programming</td>
+
+                        <td>Management of People in Leisure</td>
+
+                      </tr>
+                      <tr>
+                        <td scope="row">Risk & Safety Management</td>
+
+                        <td>Expedition Leadership</td>
+
+
+                      </tr>
+                      <tr>
+                        <td scope="row">Working with Young People in the Outdoors</td>
+
+                        <td>Managing a Watersports Centre</td>
+
+                      </tr>
+                      <tr>
+                        <td scope="row">Priniciples of Navigation at Sea</td>
+
+                        <td>Manageing Finance in Leisure</td>
+
+                      </tr>
+                      <tr>
+                        <td scope="row">Outdoor & Water-based Activities</td>
+
+                        <td>Adventure Tourism</td>
+
+                      </tr>
+                      <tr>
+                        <td scope="row">Industry Experience</td>
+
+                        <td>Marketing & Sales for the Leisure Industry</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br><br><br>
+  <!-- Work Exp -->
+  <section id="work" class="mt-5 p-5">
+    <div class="container">
+      <div class="heading">
+        <h3 class="text-center my-5">Work Experience</h3>
+      </div>
+      <div class="row g-5 ">
+        <div class="col-md-6 ">
+
+          <h5 class="fw-bold pb-2">Irish Experience: 2021, 2018, 2003 - 2009</h5>
+          <h6 class="fst-italic">2021 (Jan - Aug)</h6>
+          <h6>Ocuco Ltd. Dublin: Professional Services Intern.</h6>
+          <p class="fw-light">
+            My role was to be the first point of contact for customers by phone or email. Tasks included
+            gaining remote access into customers machines, investigating & resolving issues using SQL
+            Developer, logging tickets using Jira, troubleshooting Oracle RMAN backup log issues.
+          </p><br>
+          <h6 class="fst-italic">2018</h6>
+          <h6>NewBarn Farm shop, Co. Meath: Salesperson</h6>
+          <p class="fw-light">
+            Dealt with customers in a busy shop environment, performed stock checks, handled cash.
+          </p><br>
+          <h6 class="fst-italic">2003 - 2009</h6>
+          <h6>Various Outdoor Activity Centres: Senior Instructor and Activity Instructor</h6>
+          <p>
+            Managed, co-coordinated and instructed safe, professional outdoor education courses for
+            adults / children / school groups / sports teams / special needs and corporate groups. Duties
+            involved report writing, organising large groups, working both individually and leading or
+            working in teams
+          </p>
+
+        </div>
+        <div class="col-md-6">
+          <h5 class="text-start fw-bold pb-2">Overseas Experience: 2010 - 2017</h5>
+          <h6 class="fst-italic">2013 - 2017</h6>
+          <h6>Vietnam: English Language Teacher</h6>
+          <p>
+            Taught English in language centres in Da Nang and Hanoi.
+          </p><br>
+          <h6 class="fst-italic">2012 - 2013</h6>
+          <h6>New Zealand, Auckland: AA Breakdown Call Centre Operator</h6>
+          <p>
+            Responsible for dispatching mechanics to members who had broken down at the roadside
+            and dealing with claims calls. Understand processes of customer service and retention.
+          </p><br>
+          <h6 class="fst-italic">2010 - 2012</h6>
+          <h6>Australia, Queensland: Farm Machinery Operator</h6>
+          <p>
+            Safely operated variety of farm machinery to harvest crops and prepare fields for new
+            season. Made sure machinery was in top condition and working correctly
+          </p><br>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects -->
+  <section id="projects" class="bg-light mt-5">
+    <div class="container-lg">
+      <div class="row text-center">
+        <h3 class="mt-5 pt-5"><br>Projects</h3>
+      </div>
+      <div class="row my-5 g-5 align-items-center justify-content-center">
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0 mb-4">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title pb-3 fw-bold">4th Year project</h4>
+              <img src="images/hospital_icon.png" class="img-fluid" alt="portrait photograph" />
+              <button type="button" class="btn btn-lg btn-info m-3" data-bs-toggle="popover" title="Hospital System"
+                data-bs-placement="left"
+                data-bs-content="Currently working on developing a system prototype which will inform patients of their expected waiting times in Emergency Deptartments so as to ease their anxiety.">More
+                ..</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0 mb-4">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title pb-3 fw-bold">2nd Year project</h4>
+              <img src="images/wheelchair.png" class="img-fluid" alt="portrait photograph" />
+              <button type="button" class="btn btn-lg btn-info m-3" data-bs-toggle="popover"
+                title="Wheelchair Accesibility System" data-bs-placement="right" data-bs-content="Built system which enabled users to rate & review social venues that they visited, on the ease of access for wheelchair
+                users. Combined an MQTT publish/subscribe messaging system with a live, web based, front-end and
+                database backend.  ">More ..</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Interests -->
+  <section id="interests">
+    <div class="container">
+      <h3 class="text-center my-5 py-5"><br><br>Interests</h3>
+      <div class="row text-center my-5">
+        <div class="col-sm-4">
+          <h5>Conservation</h5>
+          <img src="images/tree.png" class="float-start pe-4" alt="" style="height: 60px;">
+          <p class="text-start pe-5">I volunteer on the River Dodder clean up days & I'm a member of Birdwatch Ireland.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h5>Outdoor activities</h5>
+          <img src="images/swim.png" class="float-start pe-4" alt="" style="height: 60px;">
+          <p class="text-start pe-5">I'm a year round sea swimmer & I enjoy camping and hiking in the summer.</p>
+        </div>
+        <div class="col-sm-4">
+          <h5>Technologies</h5>
+          <img src="images/tech.png" class="float-start pe-4" alt="" style="height: 60px;">
+          <p class="text-start">I enjoy keeping up on the latest technology trends and helping friends and family with
+            any issues they have.</p>
+        </div>
+
+        <div class="row text-center my-5">
+          <div class="col-sm-4">
+            <h5>Travel</h5>
+            <img src="images/travel4.png" class="float-start pe-4" alt="" style="height: 60px;">
+            <p class="text-start pe-5">Pre-covid I loved exploring different countries. For now its staycations closer
+              to home</p>
+          </div>
+          <div class="col-sm-4">
+            <h5>Reading</h5>
+            <img src="images/book1.png" class="float-start pe-4" alt="" style="height: 60px;">
+            <p class="text-start pe-4">I can always get lost in a good book. My favourites are sci-fi and thrillers.</p>
+          </div>
+          <div class="col-sm-4">
+            <h5>Cinema</h5>
+            <img src="images/film.png" class="float-start pe-4" alt="" style="height: 60px;">
+            <p class="text-start">A good murder mystery always makes me happy but you can't beat the classics either.
+            </p>
+          </div>
+
+        </div>
+        <div class="my-5"><br><br><br><br><br></div>
+      </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h3 class="text-start mb-4 ps-5">&nbsp;Contact Info</h3>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold"><i class="bi bi-geo-alt"></i>&emsp;Location:</span><br>&emsp;&nbsp;&nbsp;&nbsp;25
+              High Street,<br>
+              &emsp;&nbsp;&nbsp;&nbsp;Tallaght, <br>&emsp;&nbsp;&nbsp;&nbsp;Dublin 24.<br>
+              &emsp;&nbsp;&nbsp;&nbsp;Ireland
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold"><i class="bi bi-telephone-fill"></i>&emsp;Phone:</span> +353-87123456
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold"><i class="bi bi-envelope-fill"></i>&emsp;Email:</span> myemail@gmail.com
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="p-3 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; Rory Corcoran 2021</p>
+
+      <a href="" class="position-absolute bottom-0 end-0 p-3">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="message" tabindex="-1" aria-labelledby="messageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="messageModalLabel">Fill out this form and I will get back to you</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form action="">
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">
+                Name:
+              </label>
+              <input type="text" class="form-control" placeholder="eg. Mike Jones" id="name" />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="col-form-label">
+                Your Email Address:
+              </label>
+              <input type="text" class="form-control" placeholder="eg. Mike Jones@gmail.com" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="message-content" class="col-form-label">
+                Message:
+              </label>
+              <input type="text" class="form-control" placeholder="..." id="message-content" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+
+          <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Send</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Script -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoiaW9ueWEiLCJhIjoiY2t3eTg4bTFnMGtiaTJwbGE0Nng2b2wzZSJ9.2tbGfiukesb-Y4k5jGeVYg";
+    var map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [-6.3635, 53.2911],
+      zoom: 15,
+    });
+  </script>
+
+
+
+  <!-- Sent Message Alert in Modal-->
+  <script>
+
+    $('#message').on('hidden.bs.modal', function () {
+      alert("Message Sent")
+    })
+  </script>
+
+  <!-- Prevent all links with # as the href from doing anything -->
+
+  <script>
+    jQuery(document).ready(function ($) {
+      $('a[href="#"]').click(function (e) {
+        e.preventDefault();
+      });
+    });
+  </script>
+
+
+  <!-- Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <!-- Bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTrigger) {
+      return new bootstrap.Popover(popoverTrigger
+      )
+    })
+  </script>
+</body>
+
+</html>

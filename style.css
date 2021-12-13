@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+
+}
+
+
+#landing {
+  background: linear-gradient(0deg, rgba(192, 189, 191, 0.3), rgba(48, 46, 47, 0.3)), url(images/castle2.jpg) no-repeat 50% 50%;
+  display: table;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  }
+
+.landing-text {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom:50px ;
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+#list {
+  margin-top: 71px;
+  margin-left: 100px;
+  border: transparent;
+}
+/*.navbar{ 
+  background:transparent !important;
+ }*/
+ 
+ #map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
